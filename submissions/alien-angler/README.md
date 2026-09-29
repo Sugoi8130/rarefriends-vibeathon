@@ -4,7 +4,7 @@
 **Category:** Economy Potential  
 **Source:** [Sugoi8130/alien-angler](https://github.com/Sugoi8130/alien-angler)  
 **Playable preview:** [sugoi8130.github.io/alien-angler](https://sugoi8130.github.io/alien-angler/)  
-**Stack:** FriendSDK v0.1.2, React, TypeScript and Canvas
+**Stack:** FriendSDK v0.1.3, React, TypeScript and Canvas
 
 Alien Angler is a pixel-art idle collection game where the player's selected
 Rare Friend fishes alien signals from animated galaxy pools while spending
@@ -107,7 +107,7 @@ Open the printed URL, normally `http://localhost:4173`.
 ## Known limitations
 
 - Progress, balances, inventory, contracts and mastery reset when the preview
-  session reloads because FriendSDK v0.1.2 does not provide persistent saves.
+  session reloads because FriendSDK v0.1.3 does not provide persistent saves.
 - There are no live token transactions, RF redemption, trading, creator fees or
   wearable NFTs in this MVP.
 - Automated checks use the SDK mock wallet. A real-wallet public-host playthrough
@@ -116,6 +116,6 @@ Open the printed URL, normally `http://localhost:4173`.
 ## Credits
 
 Friend identity, wallet selection, canonical Friend sprites, runtime UI and
-sound utilities come from [FriendSDK v0.1.2](https://github.com/spokesz/friendsdk)
+sound utilities come from [FriendSDK v0.1.3](https://github.com/spokesz/friendsdk)
 under Apache-2.0. Alien, UFO, galaxy-pool and interface artwork was created for
 Alien Angler. Full notices are included in the source repository.
