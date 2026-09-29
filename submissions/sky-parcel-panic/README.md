@@ -5,7 +5,7 @@
 - **Additional category:** Economy Potential
 - **Source:** [github.com/Sugoi8130/sky-parcel-panic](https://github.com/Sugoi8130/sky-parcel-panic)
 - **Playable preview:** [sugoi8130.github.io/sky-parcel-panic](https://sugoi8130.github.io/sky-parcel-panic/)
-- **Stack:** FriendSDK v0.1.2, React 19, TypeScript, Canvas 2D
+- **Stack:** FriendSDK v0.1.3, React 19, TypeScript, Canvas 2D
 
 Sky Parcel Panic is a colorful SNES-style delivery adventure where the selected
 Rare Friend races across floating routes, collects simulated RF, and delivers
@@ -113,7 +113,7 @@ mute/unmute behavior, audio cues, and reduced motion.
 
 ## Credits
 
-FriendSDK v0.1.2 provides wallet connection, Friend selection, ownership checks,
+FriendSDK v0.1.3 provides wallet connection, Friend selection, ownership checks,
 canonical Rare Friend artwork, sandboxing, and the initial session state. All
 environment maps, UI, cosmetic item artwork, animations, and music/SFX in Sky
 Parcel Panic are original for this project. FriendSDK licensing and third-party
