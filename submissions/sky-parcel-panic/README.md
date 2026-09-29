@@ -35,8 +35,9 @@ Open the URL printed by the FriendSDK development server.
 
 1. Choose Postal Route, Forest Canopy, Coral Cove, Cosmic Station, or Random.
 2. Complete five deliveries during a five-minute route.
-3. Drive with WASD or arrow keys. Hold Space, Shift, or the touch BOOST button
-   to move faster.
+3. On desktop, drive with WASD or arrow keys and hold Space or Shift to boost.
+   On mobile, rotate to landscape, drag the left joystick, and hold the right
+   BOOST button. Both touch controls work at the same time.
 4. Pick up a sparkling parcel, follow the clearly named exit signs between the
    three scenes, and reach the highlighted Rare Friend recipient.
 5. Avoid moving carrots and birds, collect small spinning RF coins, and keep
@@ -83,14 +84,20 @@ FriendSDK requirement; its ticket and result are not shown, sold, or awarded.
 - Three original chiptune route tracks are randomly selected when a run starts.
 - RF coin, Star Core, and successful-delivery actions have dedicated cues.
 - The HUD has a persistent mute toggle for music and effects.
+- Mobile landscape mode provides a draggable joystick, hold-to-boost control,
+  safe-area spacing for notched screens, and a rotate-device prompt.
+- The mobile `FULL` control uses native fullscreen when available. If a wallet
+  WebView such as Rabbit Wallet or MetaMask blocks that API, FriendSDK expands
+  the game across the available browser viewport instead. The mobile-only
+  control is hidden on desktop.
 - Reduced-motion mode removes camera shake, marker pulses, and nonessential
   bobbing.
 - Keyboard state clears when the tab loses focus, the page hides, or FriendSDK
-  pauses play. Touch controls are included inside the 960 x 640 SDK viewport.
+  pauses play.
 
 ## Checks
 
-Run on September 28, 2026:
+Run on September 29, 2026:
 
 - `pnpm run build` - passed
 - `pnpm run check` - passed, including FriendSDK validation
@@ -99,7 +106,8 @@ Run on September 28, 2026:
 The automated browser route covers SDK startup, map selection and transitions,
 five-minute timing, wallet Friend recipients, pickup and delivery, RF coins,
 Star Core parameters, cosmetics purchasing/equipping/scrolling, random music,
-mute/unmute behavior, audio cues, and reduced motion.
+mute/unmute behavior, audio cues, reduced motion, mobile landscape controls,
+native fullscreen, wallet-WebView fullscreen fallback, and portrait guidance.
 
 ## Known limitations
 
@@ -110,6 +118,8 @@ mute/unmute behavior, audio cues, and reduced motion.
   not appear in every run.
 - Automated browser checks use the development mock wallet; the public preview
   still requires an eligible real wallet for FriendSDK's ownership gate.
+- Wallet-browser fallback fills the available WebView content area but cannot
+  hide navigation or system bars controlled by the wallet application itself.
 
 ## Credits
 
